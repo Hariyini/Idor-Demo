@@ -1,4 +1,5 @@
 // index.js
+const { ensureSameUser } = require('./auth');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const app = express();
@@ -25,7 +26,7 @@ app.post('/login', (req, res) => {
 
 // ----------------------
 // VULNERABLE: returns any user's profile without checking session
-app.get('/profile/:id', (req, res) => {
+app.get('/profile/:id',ensureSameUser, (req, res) => {
   const id = req.params.id;
   const user = users[id];
   if (!user) return res.status(404).json({ error: 'User not found' });
