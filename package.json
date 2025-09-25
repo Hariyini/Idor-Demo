@@ -1,0 +1,17 @@
+{
+  "name": "idor-demo",
+  "version": "1.0.0",
+  "description": "Demo for Practising Broken Access Control ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "type": "commonjs"
+}
