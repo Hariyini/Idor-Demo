@@ -12,6 +12,8 @@ A small Node.js/Express demo to illustrate **Insecure Direct Object Reference (I
 - **Demo-ready:** Test locally using curl commands or Postman.
 - **Snyk scan:** Can be imported to Snyk for security analysis and verification.
 
+<img width="1721" height="118" alt="image" src="https://github.com/user-attachments/assets/67f07a93-a525-43cf-ae81-845859a62b32" />
+
 ## How to Run
 
 ```bash
